@@ -1,3 +1,4 @@
+import 'package:comps_app/ui/_1_list_view_ui.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,14 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: Scaffold(
-          appBar: AppBar(title: const Text("Comps - v0910221445")),
-          body: const Center(
-            child: Text("Hello World!"),
-          ),
-        ));
+        home: ListViewUI01());
   }
 }
