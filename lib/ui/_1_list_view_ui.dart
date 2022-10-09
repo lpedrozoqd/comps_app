@@ -8,7 +8,11 @@ class ListViewUI01 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text("LisViewUI01")),
         body: ListView(
-          children: const [Text("Hola mundo!")],
+          children: const [
+            Text("Hola mundo 1!"),
+            Text("Hola mundo 2!"),
+            Text("Hola mundo 3!")
+          ],
         ));
   }
 }
