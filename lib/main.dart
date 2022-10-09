@@ -1,4 +1,4 @@
-import 'package:comps_app/ui/_4_list_view_ui.dart';
+import 'package:comps_app/ui/_5_list_view_ui.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +13,6 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Componentes',
-        home: ListViewUI04());
+        home: ListViewUI05());
   }
 }
