@@ -14,9 +14,15 @@ class ListViewUI04 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text("LisViewUI04")),
         body: ListView(
-          //... = es el operador 'spread'
+          //... = es el operador 'spread' dado que se requiere poblar el arreglo 'children'
           children: [
-            ...options.map((element) => Text("Hola $element")).toList()
+            ...options
+                .map((element) => ListTile(
+                      title: Text("Hola $element"),
+                      //El ícono para mostrar más info se ubica a la derecha
+                      trailing: const Icon(Icons.arrow_forward_ios_outlined),
+                    ))
+                .toList()
           ],
         ));
   }
