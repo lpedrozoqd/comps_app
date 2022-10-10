@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
         'home08': (BuildContext context) => const HomeUI08(),
         'listview07': (BuildContext context) => const ListViewUI07(),
         'listview08': (BuildContext context) => const ListViewUI08(),
-        'alert08': (BuildContext context) => const AlertUI08()
+        'alert08': (BuildContext context) => const AlertUI08(),
+        'card08': (BuildContext context) => const CardUI08()
       },
     );
   }
