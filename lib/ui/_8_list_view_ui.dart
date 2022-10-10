@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ListViewUI07 extends StatelessWidget {
+class ListViewUI08 extends StatelessWidget {
   final options = const [
     'Megaman',
     'Metal Gear',
     'Supers Smash',
     'Final Fanstay'
   ];
-  const ListViewUI07({Key? key}) : super(key: key);
+  const ListViewUI08({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("LisViewUI07"),
+          title: const Text("LisViewUI08"),
           elevation: 0,
           backgroundColor: Colors.indigo,
         ),

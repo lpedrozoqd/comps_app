@@ -1,4 +1,4 @@
-import 'package:comps_app/ui/_7_list_view_ui.dart';
+import 'package:comps_app/ui/_0_ui_base.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Componentes',
-        home: ListViewUI07());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Componentes',
+      //En lugar de este...
+      //home: CardUI08(),
+      //Se adicionará la UI desde el 'routes'
+      initialRoute: 'home08',
+      routes: {
+        'home08': (BuildContext context) => const HomeUI08(),
+        'listview07': (BuildContext context) => const ListViewUI07(),
+        'listview08': (BuildContext context) => const ListViewUI08(),
+        'alert08': (BuildContext context) => const AlertUI08()
+      },
+    );
   }
 }

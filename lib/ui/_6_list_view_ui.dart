@@ -12,7 +12,7 @@ class ListViewUI06 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("LisViewUI04")),
+        appBar: AppBar(title: const Text("LisViewUI06")),
         //Aquí se elige un constructor especial (ListView.separated) del ListView para agregar
         //un widget separador entre ítems.
         body: ListView.separated(
