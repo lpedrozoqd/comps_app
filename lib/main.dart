@@ -1,3 +1,4 @@
+import 'package:comps_app/router/_09_app_routes.dart';
 import 'package:comps_app/ui/_0_ui_base.dart';
 import 'package:flutter/material.dart';
 
@@ -11,19 +12,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Componentes',
-      //En lugar de este...
-      //home: CardUI08(),
-      //Se adicionará la UI desde el 'routes'
-      initialRoute: 'home08',
-      routes: {
-        'home08': (BuildContext context) => const HomeUI08(),
-        'listview07': (BuildContext context) => const ListViewUI07(),
-        'listview08': (BuildContext context) => const ListViewUI08(),
-        'alert08': (BuildContext context) => const AlertUI08(),
-        'card08': (BuildContext context) => const CardUI08()
-      },
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Componentes',
+        //En lugar de este...
+        //home: CardUI08(),
+        //Se adicionará la UI desde el 'routes'
+        //initialRoute: 'home08',
+
+        //initialRoute será gestionado así:
+        initialRoute: AppRoutes.initialRoute,
+        routes: AppRoutes.routes,
+
+        //Sirve para gestionar rutas que se crean 'dinámicamente'
+        //y que no corresponden a las seteadas arriba
+        //onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings)
+
+        //La anterior instrucción es igual a esta cuando se requiere de un
+        //sólo atributo: (se omiten los argumentos)
+        onGenerateRoute: AppRoutes.onGenerateRoute);
   }
 }
